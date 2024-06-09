@@ -94,13 +94,13 @@ public class stepDefinitions {
     }
 
     @And("user is able to enters subject as {string} in the {string} field")
-    public void userIsAbleToEntersSubjectAsInTheField(String arg0, String arg1) {
-        l.subjectbox().sendKeys("Incubyte");
+    public void userIsAbleToEntersSubjectAsInTheField(String Subject, String arg1) {
+        l.subjectbox().sendKeys(Subject);
     }
 
     @And("user is able to enters emailBody as {string} in the {string} field")
-    public void userIsAbleToEntersEmailBodyAsInTheField(String arg0, String arg1) {
-        l.Body().sendKeys("Automation QA test for Incubyte");
+    public void userIsAbleToEntersEmailBodyAsInTheField(String EmailBody, String arg1) {
+        l.Body().sendKeys(EmailBody);
     }
 
     @And("user is able to clicks the {string} button")
